@@ -296,4 +296,4 @@ jobs:
         env:
           MAVEN_OPTS: -Xmx2g -Dorg.slf4j.simpleLogger.defaultLogLevel=WARN -Dmaven.surefire.arguments="-Duser.language=en -Duser.region=US -Duser.timezone=US/Pacific"
         run: |
-          mvn -V -T 0.8C package -B -Ddir-only -ntp -ff -pl -nifi-assembly,-nifi-system-tests -nsu
+          mvn -V -T 0.8C package -B -Ddir-only -ntp -ff -pl -nifi-assembly -pl -nifi-system-tests -nsu
