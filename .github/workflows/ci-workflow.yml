@@ -23,7 +23,8 @@ jobs:
         uses: actions/cache@v2
         with:
           path: ~/.npm
-          key: npm-${{ hashFiles('**/package-lock.json') }}         restore-keys: |
+          key: npm-${{ hashFiles('**/package-lock.json') }} 
+          restore-keys: |
             npm-
       - name: Check Maven Com Cache
         uses: actions/cache@v2
